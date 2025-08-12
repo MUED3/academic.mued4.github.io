@@ -227,8 +227,12 @@ input, textarea {
 
 /* Academic Info Page Styles */
 .academic-hero {
-    background: linear-gradient(135deg, #2c3e50, #3498db);
+    background: linear-gradient(135deg, var(--primary), var(--accent));
     min-height: 40vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
 }
 
 .curriculum-info {
@@ -292,4 +296,61 @@ input, textarea {
     font-size: 0.8rem;
     margin-top: 10px;
     opacity: 0.8;
+}
+
+/* Add these course-specific styles */
+.course-section {
+    padding: 4rem 0;
+}
+
+.accordion {
+    margin-top: 2rem;
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.accordion-button {
+    background-color: var(--white);
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.course-table {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.course-table th {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 1rem;
+}
+
+.course-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #eee;
+}
+
+.course-table tr:hover {
+    background-color: rgba(0,0,0,0.02);
+}
+
+/* Course summary cards */
+.course-summary {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.course-summary:hover {
+    transform: translateY(-5px);
 }
