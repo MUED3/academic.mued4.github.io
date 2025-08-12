@@ -1,0 +1,151 @@
+:root {
+  --primary-color: #a73b24;
+  --secondary-color: #ff5200;
+  --light-color: #ffffff;
+  --dark-color: #333333;
+  --accent-orange-primary: #ff5200;
+  --accent-orange-dark: #a73b24;
+  --accent-orange-light: #ffded4;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Prompt', sans-serif;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-logo {
+  margin-right: 10px;
+}
+
+/* Course Section Headers */
+.course-header {
+  background: linear-gradient(135deg, var(--accent-orange-dark), var(--accent-orange-primary));
+  color: var(--light-color);
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Accordion Customization */
+.accordion-button {
+  background-color: var(--light-color);
+  color: var(--accent-orange-dark);
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--accent-orange-dark);
+  color: var(--light-color);
+}
+
+/* Button Styling */
+.btn-A {
+  background-color: var(--accent-orange-primary);
+  color: var(--light-color);
+  border: none;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn-A:hover {
+  background-color: var(--accent-orange-dark);
+  color: var(--light-color);
+  transform: translateY(-2px);
+}
+
+/* Table Styling */
+.table {
+  margin-bottom: 0;
+  background-color: var(--light-color);
+}
+
+.table thead {
+  background-color: var(--accent-orange-dark);
+  color: var(--light-color);
+}
+
+.table tbody tr:hover {
+  background-color: rgba(255, 82, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Course Summary Cards */
+.course-summary {
+  background: var(--light-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.course-summary:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer Customization */
+.footer {
+  background-color: var(--dark-color);
+  padding: 4rem 0 2rem;
+}
+
+.footer-logo {
+  opacity: 0.8;
+}
+
+.footer-heading {
+  color: var(--accent-orange-light);
+  font-weight: 600;
+}
+
+.footer-link {
+  color: var(--light-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--accent-orange-light);
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon-link {
+  color: var(--light-color);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icon-link:hover {
+  color: var(--accent-orange-light);
+}
+
+/* Contact Info */
+.contact-icon {
+  color: var(--accent-orange-light);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .course-header {
+    padding: 1.5rem 0;
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+  }
+  
+  .footer {
+    padding: 2rem 0 1rem;
+  }
+}
