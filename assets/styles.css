@@ -1,0 +1,136 @@
+/* Basic CSS for the department site */
+:root {
+    --accent: #0066a6;
+    --muted: #666;
+    --bg: #f7f9fb;
+    --card: #fff;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, 'Noto Sans Thai', "Noto Sans", sans-serif;
+    margin: 0;
+    background: var(--bg);
+    color: #111;
+    line-height: 1.5
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem
+}
+
+.site-header {
+    background: linear-gradient(90deg, var(--accent), #0082cc);
+    color: #fff;
+    padding: 0.5rem 0
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.25rem
+}
+
+.nav {
+    margin-left: auto;
+    display: flex;
+    gap: 0.5rem
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem
+}
+
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.25rem
+}
+
+.hero {
+    padding: 2rem 1rem;
+    text-align: center
+}
+
+.hero h2 {
+    margin: 0 0 .5rem
+}
+
+.btn {
+    display: inline-block;
+    padding: .6rem 1rem;
+    border-radius: 6px;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: var(--accent)
+}
+
+.card {
+    background: var(--card);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06)
+}
+
+.data-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse
+}
+
+th,
+td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+    text-align: left
+}
+
+.muted {
+    color: var(--muted)
+}
+
+.site-footer {
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 1rem
+}
+
+@media(max-width:720px) {
+    .nav {
+        display: none
+    }
+
+    #menu-toggle {
+        display: block;
+        margin-left: auto
+    }
+}

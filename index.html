@@ -1,0 +1,118 @@
+<html lang="th">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>สาขาดนตรีศึกษา | คณะศึกษาศาสตร์ มหาวิทยาลัยขอนแก่น</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <meta name="description"
+        content="เว็บไซต์สาขาดนตรีศึกษา คณะศึกษาศาสตร์ มหาวิทยาลัยขอนแก่น - ข้อมูลหลักสูตร รายวิชา ข่าวสาร และการติดต่อ">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">สาขาดนตรีศึกษา</h1>
+            <nav class="nav">
+                <a href="#home" class="nav-link">หน้าแรก</a>
+                <a href="#about" class="nav-link">เกี่ยวกับ</a>
+                <a href="#data" class="nav-link">ข้อมูล</a>
+                <a href="#contact" class="nav-link">ติดต่อ</a>
+            </nav>
+            <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- หน้าแรก -->
+        <section id="home" class="hero container">
+            <h2>ยินดีต้อนรับสู่ สาขาดนตรีศึกษา</h2>
+            <p>เว็บไซต์นี้รวบรวมข้อมูลทางวิชาการ หลักสูตร รายวิชา ข่าวประชาสัมพันธ์ และช่องทางการติดต่อของสาขา</p>
+            <div class="quick-links">
+                <a href="#data" class="btn">ดูข้อมูลหลักสูตร</a>
+                <a href="#contact" class="btn btn-outline">ติดต่อสาขา</a>
+            </div>
+        </section>
+
+        <!-- เกี่ยวกับ -->
+        <section id="about" class="container card">
+            <h2>เกี่ยวกับสาขา</h2>
+            <p><strong>สาขาดนตรีศึกษา</strong> ภายใต้คณะศึกษาศาสตร์ มหาวิทยาลัยขอนแก่น
+                มีภารกิจในการผลิตครูและนักวิชาการด้านดนตรีที่มีคุณภาพ
+                ทั้งหลักสูตรปกติและหลักสูตรจัดการศึกษามากกว่าหนึ่งปริญญา (ถ้ามี)</p>
+            <h3>พันธกิจ</h3>
+            <ul>
+                <li>การสอน: พัฒนาหลักสูตรและการเรียนการสอนที่ทันสมัย</li>
+                <li>การวิจัย: ผลิตงานวิจัยด้านดนตรีศึกษา</li>
+                <li>การบริการวิชาการ: สนับสนุนชุมชนด้วยดนตรีและการศึกษา</li>
+            </ul>
+            <h3>คณะกรรมและผู้บริหาร</h3>
+            <p>หัวหน้าสาขา: นาย/นาง/ดร. ตัวอย่าง (ตัวอย่างข้อมูล) — สามารถแก้ไขได้ตามความเป็นจริง</p>
+        </section>
+
+        <!-- ข้อมูลวิชาการ -->
+        <section id="data" class="container card">
+            <h2>ข้อมูลทางวิชาการ</h2>
+            <p>ส่วนนี้จะแสดงรายวิชา แผนการเรียน และเอกสารประกอบการสอน หากต้องการนำข้อมูลมาจาก Google Sheets ให้ทำตาม
+                README.md</p>
+
+            <div class="data-controls">
+                <label for="select-term">เลือกภาคการศึกษา:</label>
+                <select id="select-term">
+                    <option value="all">ทั้งหมด</option>
+                </select>
+            </div>
+
+            <div id="data-table-wrap">
+                <table id="courses-table">
+                    <thead>
+                        <tr>
+                            <th>ภาคเรียน</th>
+                            <th>รหัสวิชา</th>
+                            <th>ชื่อวิชา</th>
+                            <th>หน่วยกิต</th>
+                            <th>บรรยาย/ปฏิบัติ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- rows will be injected by script.js -->
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="muted">ตัวอย่างข้อมูลด้านล่างเป็นข้อมูลทดสอบ — แก้ไข `assets/script.js` เพื่อเชื่อม Google Sheets
+            </p>
+        </section>
+
+        <!-- ติดต่อ -->
+        <section id="contact" class="container card">
+            <h2>ติดต่อสาขา</h2>
+            <address>
+                <p><strong>สาขาดนตรีศึกษา</strong><br>
+                    คณะศึกษาศาสตร์ มหาวิทยาลัยขอนแก่น<br>
+                    หมายเลขโทรศัพท์: 0xx-xxx-xxxx<br>
+                    อีเมล: <a href="mailto:musicdept@kku.ac.th">musicdept@kku.ac.th</a></p>
+            </address>
+
+            <form id="contact-form">
+                <label>ชื่อ <input type="text" id="contact-name" required></label>
+                <label>อีเมล <input type="email" id="contact-email" required></label>
+                <label>ข้อความ <textarea id="contact-message" rows="4" required></textarea></label>
+                <button type="submit" class="btn">ส่งข้อความ</button>
+                <p id="contact-feedback" class="muted"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© คณะศึกษาศาสตร์ มหาวิทยาลัยขอนแก่น — สาขาดนตรีศึกษา</p>
+            <p class="muted">ออกแบบเพื่อการศึกษา — ปรับแต่งได้ตามความต้องการ</p>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
