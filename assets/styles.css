@@ -224,3 +224,72 @@ input, textarea {
   color: #666;
   font-size: 0.9rem;
 }
+
+/* Academic Info Page Styles */
+.academic-hero {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    min-height: 40vh;
+}
+
+.curriculum-info {
+    margin: 20px 0;
+}
+
+.curriculum-info ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.course-filters {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.course-filters select {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.resource-item {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.resource-item h4 {
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.resource-item ul {
+    list-style: none;
+}
+
+.resource-item ul li {
+    margin-bottom: 10px;
+}
+
+.resource-item a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.resource-item a:hover {
+    color: var(--secondary);
+}
+
+.update-info {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    opacity: 0.8;
+}

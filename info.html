@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ข้อมูลทางวิชาการ | สาขาดนตรีศึกษา</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">สาขาดนตรีศึกษา</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">หน้าแรก</a>
+                <a href="#curriculum" class="nav-link">หลักสูตร</a>
+                <a href="#courses" class="nav-link">รายวิชา</a>
+                <a href="#resources" class="nav-link">เอกสาร</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero academic-hero">
+            <div class="container">
+                <h2>ข้อมูลทางวิชาการ</h2>
+                <p>รวบรวมข้อมูลหลักสูตร รายวิชา และเอกสารประกอบการเรียนการสอน</p>
+            </div>
+        </section>
+
+        <section id="curriculum" class="container card">
+            <h2>หลักสูตรการศึกษา</h2>
+            <div class="curriculum-info">
+                <h3>หลักสูตรศึกษาศาสตรบัณฑิต สาขาดนตรีศึกษา</h3>
+                <p><strong>ระยะเวลาการศึกษา:</strong> 4 ปี</p>
+                <p><strong>จำนวนหน่วยกิตรวม:</strong> 130 หน่วยกิต</p>
+
+                <h4>โครงสร้างหลักสูตร</h4>
+                <ul>
+                    <li>หมวดวิชาศึกษาทั่วไป (30 หน่วยกิต)</li>
+                    <li>หมวดวิชาเฉพาะ (94 หน่วยกิต)
+                        <ul>
+                            <li>วิชาชีพครู (34 หน่วยกิต)</li>
+                            <li>วิชาเอกดนตรีศึกษา (60 หน่วยกิต)</li>
+                        </ul>
+                    </li>
+                    <li>หมวดวิชาเลือกเสรี (6 หน่วยกิต)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="courses" class="container card">
+            <h2>รายวิชา</h2>
+            <div class="course-filters">
+                <select id="yearFilter">
+                    <option value="all">ทุกชั้นปี</option>
+                    <option value="1">ชั้นปีที่ 1</option>
+                    <option value="2">ชั้นปีที่ 2</option>
+                    <option value="3">ชั้นปีที่ 3</option>
+                    <option value="4">ชั้นปีที่ 4</option>
+                </select>
+                <select id="termFilter">
+                    <option value="all">ทุกภาคการศึกษา</option>
+                    <option value="1">ภาคต้น</option>
+                    <option value="2">ภาคปลาย</option>
+                </select>
+            </div>
+
+            <div class="courses-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>รหัสวิชา</th>
+                            <th>ชื่อวิชา</th>
+                            <th>หน่วยกิต</th>
+                            <th>ภาคการศึกษา</th>
+                            <th>ชั้นปี</th>
+                        </tr>
+                    </thead>
+                    <tbody id="coursesList">
+                        <!-- ตัวอย่างรายวิชา -->
+                        <tr>
+                            <td>123456</td>
+                            <td>ทฤษฎีดนตรีตะวันตก 1</td>
+                            <td>3(3-0-6)</td>
+                            <td>ต้น</td>
+                            <td>1</td>
+                        </tr>
+                        <!-- เพิ่มรายวิชาอื่นๆ ตามต้องการ -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="resources" class="container card">
+            <h2>เอกสารและทรัพยากร</h2>
+            <div class="resources-grid">
+                <div class="resource-item">
+                    <h4>เอกสารหลักสูตร</h4>
+                    <ul>
+                        <li><a href="#">มคอ.2 หลักสูตรศึกษาศาสตรบัณฑิต</a></li>
+                        <li><a href="#">แผนการศึกษา</a></li>
+                        <li><a href="#">คู่มือนักศึกษา</a></li>
+                    </ul>
+                </div>
+                <div class="resource-item">
+                    <h4>แบบฟอร์มต่างๆ</h4>
+                    <ul>
+                        <li><a href="#">แบบคำร้องทั่วไป</a></li>
+                        <li><a href="#">แบบขอสอบพิเศษ</a></li>
+                        <li><a href="#">แบบฟอร์มฝึกประสบการณ์</a></li>
+                    </ul>
+                </div>
+                <div class="resource-item">
+                    <h4>เอกสารประกอบการสอน</h4>
+                    <ul>
+                        <li><a href="#">ทฤษฎีดนตรี</a></li>
+                        <li><a href="#">ประวัติดนตรี</a></li>
+                        <li><a href="#">การสอนดนตรี</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© สาขาดนตรีศึกษา คณะศึกษาศาสตร์ มหาวิทยาลัยขอนแก่น</p>
+            <p class="update-info">ปรับปรุงข้อมูลล่าสุด: สิงหาคม 2025</p>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
